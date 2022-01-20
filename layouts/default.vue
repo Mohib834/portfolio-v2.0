@@ -1,38 +1,19 @@
 <template>
   <v-app dark>
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <Nuxt />
     </v-main>
   </v-app>
 </template>
 
-<script>
-export default {
-  name: 'DefaultLayout',
-  data () {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
-  }
-}
+<script lang='ts'>
+import { Vue, Component } from 'nuxt-property-decorator';
+
+@Component
+export default class Default extends Vue {}
 </script>
+
+<style lang="scss">
+// Global styles
+@import '@/assets/main.scss';
+</style>

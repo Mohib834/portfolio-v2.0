@@ -14,6 +14,15 @@ module.exports = {
   rules: {
     'vue/multi-word-component-names': ['error', {
       ignores: ['index', 'default', 'error']
-    }]
+    }],
+    semi: [2, 'always'],
+    camelcase: ['error', { allow: ['^[a-z]+(_[a-z]+)+$'] }], // Allow snakecase
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 1,
+        multiline: 1
+      }
+    ]
   }
-}
+};

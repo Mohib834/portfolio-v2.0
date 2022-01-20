@@ -2,3 +2,63 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+
+$body-font-family: 'Montserrat', sans-serif;
+$border-radius-root: 0;
+// Update $font-size-root to update the 1rem value.
+$font-size-root: 16px;
+
+$material-dark: (
+  background: var(--v-primary-base),
+  cards: var(--v-primary-base),
+);
+
+$container-max-widths: (
+  'md': 786px,
+  'lg': 1224px,
+  'xl': 1224px,
+);
+
+$headings: (
+  'h1': (
+    'size': 3.052rem,
+    'line-height':  58.51px,
+    'letter-spacing': 0.005em,
+  ),
+  'body-1': (
+    'size': 1.25rem,
+    'line-height': 34.29px,
+    'letter-spacing': 3.5%,
+  ),
+  'body-2': (
+    'size': 1.125rem,
+    'line-height': 24.38px,
+  ),
+  'button': (
+     'weight': 400,
+     'line-height': 21.94px,
+     'size': 1.125rem,
+     'letter-spacing': .005em,
+     'text-transform': 'initial',
+  ),
+  'caption': (
+    'size': 0.64rem,
+    'line-height': 12.8px
+  ),
+);
+
+
+$icons: (
+  'inactive': var(--v-primary-base),
+);
+
+// Button
+$btn-font-weight: 400;
+$btn-text-transform: 'initial';
+$btn-font-sizes: (
+  'default': 1.125rem,
+);
+
+// Text fields
+$text-field-padding: 0 20px;
