@@ -20,7 +20,42 @@
         </v-row>
         <v-row class="fill-height">
           <v-col>
-            H
+            <v-sheet class="fill-height d-flex flex-column justify-center align-center">
+              <v-sheet class="text-center my-auto">
+                <p
+                  class="text-body-1 mb-2 font-weight-medium text--tertiary"
+                  style="letter-spacing: 0.4em"
+                >
+                  Front-End Engineer.
+                </p>
+                <h1
+                  class="text-uppercase mb-6"
+                  style="font-size: 4rem; line-height: 78.02px"
+                >
+                  Mohib Arshi
+                </h1>
+                <p
+                  class="mb-7 text-body-2 text--secondary"
+                  style="max-width: 54.375rem;"
+                >
+                  t is a long established fact that a reader will be distracted by the readable content of a pless normal distribution of letters, as opposed to using 'Content here,
+                </p>
+                <v-btn
+                  outlined
+                  height="3.375rem"
+                >
+                  Work with me
+                </v-btn>
+              </v-sheet>
+
+              <v-sheet class="text-body-2 mt-auto">
+                <a
+                  href="mailto:mohibarshi834@gmail.com"
+                  class="g-link font-weight-light"
+                  style="color: #C6C6C6"
+                >mohibarshi834@gmail.com</a>
+              </v-sheet>
+            </v-sheet>
           </v-col>
         </v-row>
       </v-container>

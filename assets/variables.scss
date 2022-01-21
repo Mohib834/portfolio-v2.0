@@ -12,6 +12,10 @@ $font-size-root: 16px;
 $material-dark: (
   background: var(--v-primary-base),
   cards: var(--v-primary-base),
+  text: (
+    primary: #fafafa, // text--primary will give you this color and not primary--text, this will give you primary theme color
+    secondary: #737373,
+  )
 );
 
 $container-max-widths: (
@@ -29,18 +33,11 @@ $headings: (
   'body-1': (
     'size': 1.25rem,
     'line-height': 34.29px,
-    'letter-spacing': 3.5%,
   ),
   'body-2': (
     'size': 1.125rem,
     'line-height': 24.38px,
-  ),
-  'button': (
-     'weight': 400,
-     'line-height': 21.94px,
-     'size': 1.125rem,
-     'letter-spacing': .005em,
-     'text-transform': 'initial',
+    'letter-spacing': 0.035em,
   ),
   'caption': (
     'size': 0.64rem,

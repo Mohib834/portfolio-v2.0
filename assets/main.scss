@@ -1,10 +1,27 @@
 // @BUG vuetify v-row overflow on using fill-height - https://github.com/vuetifyjs/vuetify/issues/10554
 
-// .container.fill-height {
-//     flex-direction: column !important;
-//     align-items: initial !important;
-// }
+// This is my own solution for the bug.
+.container.fill-height {
+    flex-wrap: nowrap !important;
+    height: 100%;
+    flex-direction: column;
+}
 
-// .container.fill-height>.row {
-//     flex: 1 1 auto !important;
-// }
+.container.fill-height>.row {
+    flex: auto !important;
+    max-width: initial;
+    width: 100%;
+}
+
+html {
+ overflow-y: hidden !important;   
+}
+
+
+.g-link {
+    text-decoration: none;
+    color: #fafafa;
+    &:hover{
+        border-bottom: 1px solid currentColor;
+    }
+}
