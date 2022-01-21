@@ -6,6 +6,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  loadingIndicator: '~/static/loading.html',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - portfolio-v2.0',

@@ -29,13 +29,13 @@
                   Front-End Engineer.
                 </p>
                 <h1
-                  class="text-uppercase mb-6"
+                  class="text-uppercase mb-4"
                   style="font-size: 4rem; line-height: 78.02px"
                 >
                   Mohib Arshi
                 </h1>
                 <p
-                  class="mb-7 text-body-2 text--secondary"
+                  class="mb-8 text-body-2 text--secondary"
                   style="max-width: 54.375rem;"
                 >
                   t is a long established fact that a reader will be distracted by the readable content of a pless normal distribution of letters, as opposed to using 'Content here,
