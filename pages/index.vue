@@ -1,86 +1,51 @@
 <template>
-  <Fragment>
-    <header
-      id="header"
-    >
-      <v-container class="fill-height">
+  <div
+    style="height: 100vh"
+    class="d-flex flex-column"
+  >
+    <nav class="py-5">
+      <v-container>
         <v-row>
           <v-col>
-            <nav class="py-5">
-              <v-sheet class="d-flex justify-center">
-                <a
-                  class="logo rounded-circle text-body-2 d-flex justify-center align-center"
-                  href="/"
-                >
-                  MA
-                </a>
-              </v-sheet>
-            </nav>
-          </v-col>
-        </v-row>
-        <v-row class="fill-height">
-          <v-col>
-            <v-sheet class="fill-height d-flex flex-column justify-center align-center">
-              <v-sheet class="text-center my-auto">
-                <p
-                  class="text-body-1 mb-2 font-weight-medium text--tertiary"
-                  style="letter-spacing: 0.4em"
-                >
-                  Front-End Engineer.
-                </p>
-                <h1
-                  class="text-uppercase mb-4"
-                  style="font-size: 4rem; line-height: 78.02px"
-                >
-                  Mohib Arshi
-                </h1>
-                <p
-                  class="mb-8 text-body-2 text--secondary"
-                  style="max-width: 54.375rem;"
-                >
-                  t is a long established fact that a reader will be distracted by the readable content of a pless normal distribution of letters, as opposed to using 'Content here,
-                </p>
-                <v-btn
-                  outlined
-                  height="3.375rem"
-                >
-                  Work with me
-                </v-btn>
-              </v-sheet>
-
-              <v-sheet class="text-body-2 mt-auto">
-                <a
-                  href="mailto:mohibarshi834@gmail.com"
-                  class="g-link font-weight-light"
-                  style="color: #C6C6C6"
-                >mohibarshi834@gmail.com</a>
-              </v-sheet>
+            <v-sheet class="d-flex justify-center">
+              <a
+                class="logo rounded-circle text-body-2 d-flex justify-center align-center"
+                href="/"
+              >
+                MA
+              </a>
             </v-sheet>
           </v-col>
         </v-row>
       </v-container>
-    </header>
-  </Fragment>
+    </nav>
+
+    <TheHeader />
+  </div>
 </template>
 
 <script lang='ts'>
 import { Vue, Component } from 'nuxt-property-decorator';
-import { Fragment } from 'vue-frag';
+import TheHeader from '@/components/TheHeader.vue';
 
 @Component({
   components: {
-    Fragment
+    TheHeader
   }
 })
 export default class Index extends Vue {
-  mounted () {
-  }
+  loading = true;
 }
 </script>
 
 <style lang="scss" scoped>
 #header{
   height: 100vh;
+  transition: all .5s;
+}
+
+.hide{
+  opacity: 0;
 }
 
 .logo{
